@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Credentials
+.env
+.env.*
+*.key
+
+# Temporary files
+*.log
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Editor files
+.vscode/
+.idea/
+
+
