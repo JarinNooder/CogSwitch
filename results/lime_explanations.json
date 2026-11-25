@@ -1,0 +1,225 @@
+{
+  "checkpoint_path": "/home/nmunir/cogswitch/checkpoints/best_lam0.7.pt",
+  "checkpoint_sha256": "27034ea0f0fc604f7f467dd2d45dcacc255698800c1bbd71a5a5fc0d491533e4",
+  "num_samples_per_explanation": 2000,
+  "excluded_pair": "en_zh",
+  "exclusion_note": "Excluded to retain the manuscript three-panel illustration; not evidence that all en_zh LIME explanations are degenerate.",
+  "selection_rule": "first correctly classified phishing message in fixed-seed permutation per pair, >=15 unique Unicode words",
+  "tokenization": "Unicode letters/numbers with combining marks kept within words",
+  "notes": "LIME weights describe local perturbation effects on unmodified P(phishing); local R2 measures surrogate fidelity.",
+  "results": {
+    "en_hi": {
+      "text": "Urgent: आपके बैंक अकाउंट को सस्पेंड किया है, अब Billing अपडेट करो now\n\n(Translation: Urgent: Your bank account has been suspended, update billing now)",
+      "df_index": 1451,
+      "confidence": 0.9999027252197266,
+      "seed_used": 42,
+      "pool_size": 55,
+      "local_fidelity_r2": 0.008335419799240129,
+      "local_surrogate_prediction": 1.0006585947508708,
+      "lime_features": [
+        [
+          "Urgent",
+          0.0005260584728080087
+        ],
+        [
+          "Your",
+          0.0005141186883870612
+        ],
+        [
+          "bank",
+          -0.0004996362286957256
+        ],
+        [
+          "है",
+          0.0004975947939152639
+        ],
+        [
+          "account",
+          0.000494464995846528
+        ],
+        [
+          "Urgent",
+          0.0004844809854078739
+        ],
+        [
+          "now",
+          0.0004749701232766202
+        ],
+        [
+          "करो",
+          0.000474450953014006
+        ],
+        [
+          "now",
+          0.0004730899453084168
+        ],
+        [
+          "आपके",
+          0.00041184567667386796
+        ],
+        [
+          "suspended",
+          0.00040775675255430094
+        ],
+        [
+          "बैंक",
+          0.0003773642935370161
+        ],
+        [
+          "अकाउंट",
+          -0.00037477508726996403
+        ],
+        [
+          "अब",
+          -0.0003523125036031153
+        ],
+        [
+          "been",
+          -0.0003379647263495591
+        ]
+      ]
+    },
+    "en_ar": {
+      "text": "كلاك مأمن! حسابك باي بال محروم. يرجى التأكد من هويةك لتفعيل الحساب: http://bit.ly/6882\n\nNote: The example Arabic style is not part of the original phishing message, but it is provided to give an idea of how Arabic words and phrases can be incorporated into a mixed-code message.",
+      "df_index": 2928,
+      "confidence": 0.9999405145645142,
+      "seed_used": 43,
+      "pool_size": 64,
+      "local_fidelity_r2": 0.01917189880786363,
+      "local_surrogate_prediction": 1.0000590822327942,
+      "lime_features": [
+        [
+          "Note",
+          0.0001268092831176392
+        ],
+        [
+          "لتفعيل",
+          0.00012097951646285807
+        ],
+        [
+          "باي",
+          -0.00010782298929391793
+        ],
+        [
+          "يرجى",
+          0.00010202223937160921
+        ],
+        [
+          "حسابك",
+          9.632797885326124e-05
+        ],
+        [
+          "مأمن",
+          9.195470286030359e-05
+        ],
+        [
+          "http",
+          8.910601920702651e-05
+        ],
+        [
+          "The",
+          8.725335786353697e-05
+        ],
+        [
+          "كلاك",
+          8.669242346252819e-05
+        ],
+        [
+          "هويةك",
+          8.610068400375935e-05
+        ],
+        [
+          "code",
+          -6.21252388521623e-05
+        ],
+        [
+          "it",
+          -5.919958216051668e-05
+        ],
+        [
+          "the",
+          -5.4070440031345504e-05
+        ],
+        [
+          "style",
+          -4.0986841733454744e-05
+        ],
+        [
+          "into",
+          -3.860735028697636e-05
+        ]
+      ]
+    },
+    "en_es": {
+      "text": "\"Hola, tu boleta de PBS está disponible, ingresa a este link [insert link] to confirmar tu información.\"\n\nNote: This message is an example and is not affiliated with PBS (Public Broadcasting Service).",
+      "df_index": 856,
+      "confidence": 0.9999356269836426,
+      "seed_used": 44,
+      "pool_size": 31,
+      "local_fidelity_r2": 0.00432801427088958,
+      "local_surrogate_prediction": 0.9999613404706987,
+      "lime_features": [
+        [
+          "Broadcasting",
+          1.5209655592514856e-05
+        ],
+        [
+          "de",
+          -1.4576683998294474e-05
+        ],
+        [
+          "a",
+          1.1108170446980067e-05
+        ],
+        [
+          "and",
+          1.0557634462661932e-05
+        ],
+        [
+          "link",
+          1.0473644350918807e-05
+        ],
+        [
+          "is",
+          1.0358041496351516e-05
+        ],
+        [
+          "is",
+          9.901722313746949e-06
+        ],
+        [
+          "confirmar",
+          -8.5115491628211e-06
+        ],
+        [
+          "an",
+          8.235339615748935e-06
+        ],
+        [
+          "Hola",
+          8.084265379919455e-06
+        ],
+        [
+          "información",
+          -7.43310388233026e-06
+        ],
+        [
+          "ingresa",
+          -6.527739859755419e-06
+        ],
+        [
+          "está",
+          -5.815185944234717e-06
+        ],
+        [
+          "tu",
+          -5.293928987631915e-06
+        ],
+        [
+          "to",
+          -3.585897412539659e-06
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "n_samples": 200,
+  "score_definition": "Mean absolute SHAP attribution conditional on token occurrence",
+  "min_token_occurrences": 2,
+  "top_words": [
+    {
+      "token": "الحذف",
+      "mean_abs_shap": 0.6871681285509794,
+      "occurrences": 2
+    },
+    {
+      "token": "aapki",
+      "mean_abs_shap": 0.42479240796744006,
+      "occurrences": 3
+    },
+    {
+      "token": "irctc",
+      "mean_abs_shap": 0.41075100760936795,
+      "occurrences": 3
+    },
+    {
+      "token": "aapka",
+      "mean_abs_shap": 0.41067044985591866,
+      "occurrences": 3
+    },
+    {
+      "token": "aapke",
+      "mean_abs_shap": 0.29469040149441145,
+      "occurrences": 3
+    },
+    {
+      "token": "hello",
+      "mean_abs_shap": 0.2940423405218873,
+      "occurrences": 5
+    },
+    {
+      "token": "alert",
+      "mean_abs_shap": 0.26741533976683207,
+      "occurrences": 7
+    },
+    {
+      "token": "payment",
+      "mean_abs_shap": 0.20454175892399462,
+      "occurrences": 2
+    },
+    {
+      "token": "account",
+      "mean_abs_shap": 0.18747955218969034,
+      "occurrences": 18
+    },
+    {
+      "token": "suspended",
+      "mean_abs_shap": 0.1771139179914485,
+      "occurrences": 4
+    },
+    {
+      "token": "hey",
+      "mean_abs_shap": 0.16966399678379956,
+      "occurrences": 5
+    },
+    {
+      "token": "本地送货上门",
+      "mean_abs_shap": 0.16916675188701405,
+      "occurrences": 4
+    },
+    {
+      "token": "aapne",
+      "mean_abs_shap": 0.16834108560311734,
+      "occurrences": 2
+    },
+    {
+      "token": "balance",
+      "mean_abs_shap": 0.14364956994211298,
+      "occurrences": 2
+    },
+    {
+      "token": "حسابك",
+      "mean_abs_shap": 0.14281672225956754,
+      "occurrences": 2
+    },
+    {
+      "token": "online",
+      "mean_abs_shap": 0.13871422406728584,
+      "occurrences": 2
+    },
+    {
+      "token": "immediately",
+      "mean_abs_shap": 0.13757645027705698,
+      "occurrences": 3
+    },
+    {
+      "token": "hoon",
+      "mean_abs_shap": 0.1306858114037368,
+      "occurrences": 5
+    },
+    {
+      "token": "needed",
+      "mean_abs_shap": 0.12840763910713804,
+      "occurrences": 2
+    },
+    {
+      "token": "dhyan",
+      "mean_abs_shap": 0.1269043566195478,
+      "occurrences": 2
+    }
+  ]
+}

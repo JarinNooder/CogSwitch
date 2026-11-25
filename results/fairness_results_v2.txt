@@ -1,0 +1,37 @@
+==========================================================================================
+FAIRNESS EVALUATION — CogSwitch (code-switched language-pair groups)
+English-source (en) excluded from EOD calculation.
+==========================================================================================
+
+Model                     EOD-TPR         95% CI (TPR)    EOD-FPR         95% CI (FPR)
+------------------------------------------------------------------------------------------
+λ=0.0                      0.0227     [0.0087, 0.0547]     0.0063     [0.0000, 0.0161]
+λ=0.3                      0.0221     [0.0105, 0.0685]     0.0031     [0.0000, 0.0101]
+λ=0.5                      0.0152     [0.0071, 0.0484]     0.0155     [0.0062, 0.0324]
+λ=0.7                      0.0256     [0.0114, 0.0682]     0.0039     [0.0000, 0.0124]
+λ=0.9                      0.0256     [0.0072, 0.0658]     0.0155     [0.0038, 0.0325]
+
+==========================================================================================
+Per language-pair FPR and FNR — CogSwitch (λ=0.7)
+==========================================================================================
+Pair            N      FPR      FNR
+----------------------------------------
+en_hi         390   0.0039   0.0152
+en_ar         414   0.0000   0.0208
+en_es         359   0.0000   0.0256
+en_zh         422   0.0000   0.0000
+
+Notes:
+  EOD-TPR = max(TPR) - min(TPR) across CS language groups.
+  EOD-FPR = max(FPR) - min(FPR) across CS language groups.
+  CIs: 95% pooled bootstrap, 10,000 resamples, seed=42.
+  Figure 3 and Table X: four code-switched language pairs only.
+  Group labels describe language pairs, not verified nationalities.
+  Verify λ=0.7 is the intended full-model checkpoint (aux weight 0.1).
+
+Checkpoint SHA-256 fingerprints:
+  λ=0.0: 5385a691c2efb9c9f29a9cce60b3821a4ce11a2bfccd5b6f417b50f7a873e251  (/home/nmunir/cogswitch/checkpoints/best_lam0.0.pt)
+  λ=0.3: 5de721f4643ae669d6159f2331fa87bffb38d41d1d136263c8fc052aba2b6838  (/home/nmunir/cogswitch/checkpoints/best_lam0.3.pt)
+  λ=0.5: 9c2659fc525e252269a46f5566e56ff5d87328fa03bfc60834e559894ebf96da  (/home/nmunir/cogswitch/checkpoints/best_lam0.5.pt)
+  λ=0.7: 27034ea0f0fc604f7f467dd2d45dcacc255698800c1bbd71a5a5fc0d491533e4  (/home/nmunir/cogswitch/checkpoints/best_lam0.7.pt)
+  λ=0.9: 46982e7202c0d31266135ddc07e9a07d25ec6d91d1f304909ca334f8652b3f89  (/home/nmunir/cogswitch/checkpoints/best_lam0.9.pt)
