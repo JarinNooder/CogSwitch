@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use CogSwitch in your research, please cite our paper."
+title: "CogSwitch: Detecting Code-Mixed Social Engineering Attacks via Cross-Lingual Supervised Contrastive Learning"
+type: software
+authors:
+  - family-names: "Esty"
+    given-names: "Jarin Nooder"
+  - family-names: "Alhussien"
+    given-names: "Nour"
+  - family-names: "Chu"
+    given-names: "Wenhui"
+  - family-names: "Islam"
+    given-names: "Sheikh Rabiul"
+repository-code: "https://github.com/JarinNooder/CogSwitch"
+
+
